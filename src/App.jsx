@@ -1,58 +1,96 @@
 import "./App.css";
-// import fontPoppins from "./fonts";
-import logo from "./img/logo/YOUR LOGO.svg";
-import img1 from "./img/sectionImg1.jpeg";
-import img2 from "./img/sectionImg2.jpeg";
-import img3 from "./img/sectionImg3.jpeg";
-import img4 from "./img/sectionImg4.jpeg";
+import FashionSection from "./components/fashion-section/FashionSection";
+import Header from "./components/header/Header";
+import Hero from "./components/hero/Hero";
+import SectionImg from "./components/section-img/SectionImg";
+import womenImg1 from "./img/womenFashion/1.jpeg";
+import womenImg2 from "./img/womenFashion/2.jpeg";
+import womenImg3 from "./img/womenFashion/3.jpeg";
+import womenImg4 from "./img/womenFashion/4.jpeg";
+import menImg1 from "./img/menFashion/1.jpeg";
+import menImg2 from "./img/menFashion/2.jpeg";
+import menImg3 from "./img/menFashion/3.jpeg";
+import menImg4 from "./img/menFashion/4.jpeg";
+
+const cardArrWomen = [
+    {
+        title: "IGURE",
+        description: "GREEN MUSCLE FIT POLO SHIRT",
+        img: womenImg1,
+        oldPrice: "$122.2",
+        newPrice: "$99.8",
+    },
+    {
+        title: "IGURE",
+        description: "GREEN MUSCLE FIT POLO SHIRT",
+        img: womenImg2,
+        oldPrice: "$122.2",
+        newPrice: "$99.8",
+    },
+    {
+        title: "IGURE",
+        description: "GREEN MUSCLE FIT POLO SHIRT",
+        img: womenImg3,
+        oldPrice: "$122.2",
+        newPrice: "$99.8",
+    },
+    {
+        title: "IGURE",
+        description: "GREEN MUSCLE FIT POLO SHIRT",
+        img: womenImg4,
+        oldPrice: "$122.2",
+        newPrice: "$99.8",
+    },
+];
+
+const cardArrMen = [
+    {
+        title: "IGURE",
+        description: "GREEN MUSCLE FIT POLO SHIRT",
+        img: menImg1,
+        oldPrice: "$122.2",
+        newPrice: "$99.8",
+    },
+    {
+        title: "IGURE",
+        description: "GREEN MUSCLE FIT POLO SHIRT",
+        img: menImg2,
+        oldPrice: "$122.2",
+        newPrice: "$99.8",
+    },
+    {
+        title: "IGURE",
+        description: "GREEN MUSCLE FIT POLO SHIRT",
+        img: menImg3,
+        oldPrice: "$122.2",
+        newPrice: "$99.8",
+    },
+    {
+        title: "IGURE",
+        description: "GREEN MUSCLE FIT POLO SHIRT",
+        img: menImg4,
+        oldPrice: "$122.2",
+        newPrice: "$99.8",
+    },
+];
 
 const App = () => {
     return (
-        <div>
-            <header>
-                <img src={logo} className="logo__img" alt="logo" />
-                <nav className="header__menu">
-                    <a href="#">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">lookbook</a>
-                    <a href="#">features</a>
-                    <a href="#">pages</a>
-                    <a href="#">blog</a>
-                </nav>
-                <nav className="header__menu">
-                    <a href="#">search</a>
-                    <a href="#">heart</a>
-                    <a href="#">shopping-cart</a>
-                </nav>
-            </header>
-            <section className="hero__background">
-                <p className="new__trend_text">NEW TREND</p>
-                <h1 className="title">COLLUSION</h1>
-                <p className="short__description">
-                    An exclusive selection of this season's trends.
-                </p>
-                <div className="btn__container">
-                    <button>discover</button>
-                    <button>shop now</button>
-                </div>
-            </section>
-            <main>
-                <section className="section__img">
-                    <div className="img__section1">
-                        <div>
-                            <img src={img1} alt="#" />
-                        </div>
-                        <div className="img__section1_section1">
-                            <img src={img2} alt="#" />
-                            <img src={img3} alt="#" />
-                        </div>
-                    </div>
-                    <div className="img__section2">
-                        <img src={img4} alt="#" />
-                    </div>
-                </section>
-            </main>
-        </div>
+        <>
+            <Header />
+            <Hero />
+            <SectionImg />
+            <FashionSection
+                title={"WOMEN’S FASHION"}
+                subtitle={"Shop our new arrivals from established brands"}
+                data={cardArrWomen}
+            />
+            <FashionSection
+                title={"MEN'S SECTION"}
+                subtitle={"Shop our new arrivals from established brands"}
+                data={cardArrMen}
+            />
+        </>
     );
 };
 
