@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./header.css";
 import logo from "../../img/logo/YOUR LOGO.svg";
 
@@ -6,17 +7,17 @@ const Header = () => {
         <header>
             <img src={logo} className="logo__img" alt="logo" />
             <nav className="header__menu">
-                <a href="#">Home</a>
-                <a href="#">Shop</a>
-                <a href="#">lookbook</a>
-                <a href="#">features</a>
-                <a href="#">pages</a>
-                <a href="#">blog</a>
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/shop">Shop</NavLink>
+                <NavLink to="/lookbook">lookbook</NavLink>
+                <NavLink to="/features">features</NavLink>
+                <NavLink to="/pages">pages</NavLink>
+                <NavLink to="blog">blog</NavLink>
             </nav>
             <nav className="header__menu">
-                <a href="#">search</a>
-                <a href="#">heart</a>
-                <a href="#">shopping-cart</a>
+                <NavLink to="/search">search</NavLink>
+                <NavLink to="/heart">heart</NavLink>
+                <NavLink to="/shopping-cart">shopping-cart</NavLink>
             </nav>
         </header>
     );
