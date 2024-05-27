@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Fashion-Site/static/css/main.32d63944.css",
-    "main.js": "/Fashion-Site/static/js/main.40c56d48.js",
+    "main.css": "/Fashion-Site/static/css/main.1a0015c0.css",
+    "main.js": "/Fashion-Site/static/js/main.cb849403.js",
     "static/media/heroBackground.jpeg": "/Fashion-Site/static/media/heroBackground.39d57aff84001b1166d6.jpeg",
     "static/media/sectionImg4.jpeg": "/Fashion-Site/static/media/sectionImg4.317f28032442582ee3ee.jpeg",
     "static/media/sectionImg1.jpeg": "/Fashion-Site/static/media/sectionImg1.a24d7db018834461c8be.jpeg",
@@ -13,11 +13,11 @@
     "static/media/sectionImg3.jpeg": "/Fashion-Site/static/media/sectionImg3.32352e4d29c811c4c4d3.jpeg",
     "static/media/YOUR LOGO.svg": "/Fashion-Site/static/media/YOUR LOGO.6ae76a8f1675a28a7181819ca7b5fe57.svg",
     "index.html": "/Fashion-Site/index.html",
-    "main.32d63944.css.map": "/Fashion-Site/static/css/main.32d63944.css.map",
-    "main.40c56d48.js.map": "/Fashion-Site/static/js/main.40c56d48.js.map"
+    "main.1a0015c0.css.map": "/Fashion-Site/static/css/main.1a0015c0.css.map",
+    "main.cb849403.js.map": "/Fashion-Site/static/js/main.cb849403.js.map"
   },
   "entrypoints": [
-    "static/css/main.32d63944.css",
-    "static/js/main.40c56d48.js"
+    "static/css/main.1a0015c0.css",
+    "static/js/main.cb849403.js"
   ]
 }
